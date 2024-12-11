@@ -1,0 +1,35 @@
+/* header.css */
+
+ul {
+  list-style-type: none;  /* Loại bỏ các dấu chấm của list */
+  margin: 0;              /* Bỏ margin mặc định */
+  padding: 0;             /* Bỏ padding mặc định */
+  display: flex;          /* Sử dụng Flexbox để trải đều các item */
+  justify-content: space-between; /* Giãn đều các item */
+  background-color: #333; /* Màu nền của header */
+  width: 100vw;           /* Đảm bảo header chiếm toàn bộ chiều rộng màn hình */
+  position: fixed;        /* Cố định header khi cuộn trang */
+  top: 0;                 /* Đặt vị trí của header ở trên cùng */
+  left: 0;                /* Đặt vị trí của header ở sát trái */
+  z-index: 9999;          /* Đảm bảo header hiển thị trên cùng */
+  padding: 10px 20px;     /* Tạo khoảng cách cho các item trong header */
+}
+
+ul li {
+  margin: 0 10px;         /* Tạo khoảng cách giữa các phần tử trong danh sách */
+}
+
+ul li a {
+  color: white;           /* Màu chữ */
+  text-align: center;     /* Căn giữa chữ */
+  text-decoration: none;  /* Bỏ gạch chân */
+  padding: 10px 20px;     /* Khoảng cách bên trong các link */
+}
+
+ul li a:hover {
+  background-color: #111; /* Đổi màu nền khi hover */
+}
+
+ul li a.active {
+  background-color: #04AA6D; /* Màu nền cho mục đang active */
+}

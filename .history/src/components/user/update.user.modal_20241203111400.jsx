@@ -1,0 +1,51 @@
+import { Button, Input, notification,Modal } from "antd"
+import { useState } from "react"
+const UpdateUserModal=()=>{
+    const [fullName,setFullName]=useState("");
+    const [password,setPassWord]=useState("");
+    const [email,setEmail]=useState("");
+    const[phone,setPhone]=useState("");
+    const[isModalOpen,setIsModalOpen]=useState(false);
+    
+    return(
+        <Modal title="Create User" 
+        open={isModalOpen} 
+        onOk={()=>handleSubmitBtn()}    
+        onCancel={()=>resetAndCloseModal()}
+        maskClosable={false}
+        okText={"CREATE"}
+        >
+         <div style={{display:"flex",gap:"15px",flexDirection:"column"}}>
+              <div>
+               <span>Full Name</span>
+               <Input
+                  value={fullName}
+                  onChange={(event)=>{setFullName(event.target.value)}}
+                  />
+              </div>
+              <div>
+               <span>Email</span>
+               <Input
+                  value={email}
+                  onChange={(event)=>{setEmail(event.target.value)}}
+                  />
+              </div>
+              <div>
+               <span>Password</span>
+               <Input.Password
+                  value={password}
+                  onChange={(event)=>{setPassWord(event.target.value)}}
+                  />
+              </div>
+              <div>
+               <span>Phone Number</span>
+               <Input
+                  value={phone}
+                  onChange={(event)=>{setPhone(event.target.value)}}
+                  />
+              </div>
+         </div>
+        </Modal>  
+    )
+}
+export default UpdateUserModal

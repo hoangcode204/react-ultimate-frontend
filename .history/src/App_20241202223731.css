@@ -1,0 +1,6 @@
+/* App.css */
+.main-content {
+  margin-top: 80px; /* Dành khoảng trống cho header */
+  margin-bottom: 60px; /* Dành khoảng trống cho footer */
+  padding: 20px;
+}

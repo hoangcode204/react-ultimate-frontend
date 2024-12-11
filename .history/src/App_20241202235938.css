@@ -1,0 +1,63 @@
+/* app.css */
+.container {
+  margin: 100px auto 60px; /* Dành không gian cho header và footer */
+  max-width: 1280px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table-users {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-users th,
+.table-users td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-users th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table-users tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

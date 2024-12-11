@@ -1,0 +1,28 @@
+/* App.css */
+.main-content {
+  margin-top: 80px; /* Đảm bảo nội dung nằm bên dưới header */
+  margin-bottom: 60px; /* Đảm bảo nội dung nằm bên trên footer */
+  padding: 20px;
+  position: relative;
+  z-index: 0; /* Nội dung chính không đè lên header */
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative; /* Đặt phân trang trong bố cục chuẩn */
+  z-index: 1; /* Đảm bảo không chồng lên header */
+}
+
+.pagination a {
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 10px 15px;
+  color: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pagination a:hover {
+  background-color: #f1f1f1;
+}

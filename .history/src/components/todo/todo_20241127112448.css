@@ -1,0 +1,85 @@
+/* todo.css */
+
+/* Thiết lập tổng quan cho container */
+.todo-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Tiêu đề của Todo List */
+  .todo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input và nút thêm task */
+  .todo-container input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .todo-container button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Các mục trong danh sách todo */
+  .todo-data {
+    margin-top: 20px;
+  }
+  
+  .todo-data div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .todo-data div:last-child {
+    border-bottom: none;
+  }
+ /* todo.css hoặc App.css */
+
+/* Định dạng cho container chứa hình ảnh */
+.todo-image {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Định dạng cho hình ảnh logo */
+  .todo-image img {
+    width: 100px; /* Chiều rộng hình ảnh */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ */
+    transition: transform 0.5s ease; /* Hiệu ứng chuyển đổi */
+  }
+  
+  /* Hiệu ứng xoay tròn khi rê chuột qua hình ảnh */
+  .todo-image img:hover {
+    transform: rotate(360deg); /* Xoay tròn 360 độ khi hover */
+  }
+  .todo-item{
+    display: flex;
+    ju
+  }

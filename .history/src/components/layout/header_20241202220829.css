@@ -1,0 +1,59 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%; /* Sử dụng 100% thay cho 100vw để không bị tràn ngang */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
+}
+
+/* Tạo khoảng cách cho body để tránh việc bị header che khuất */
+body {
+  padding-top: 60px; /* Điều chỉnh chiều cao của Header */
+}
+.pagination {
+  display: flex;
+  justify-content: space-between; /* Giãn đều */
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #333;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #111;
+}

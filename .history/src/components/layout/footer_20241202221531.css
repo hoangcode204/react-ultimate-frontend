@@ -1,0 +1,22 @@
+/* Định dạng chung cho footer */
+.footer {
+    background-color: #2D3E50; /* Màu nền của footer */
+    color: white; /* Màu chữ trắng */
+    padding: 20px;
+    text-align: center; /* Căn giữa nội dung */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Chiếm toàn bộ chiều rộng của màn hình */
+    font-size: 14px; /* Kích thước chữ */
+}
+
+/* Định dạng khi hover cho footer (nếu có liên kết) */
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}

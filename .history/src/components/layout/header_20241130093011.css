@@ -1,0 +1,42 @@
+/* Đặt toàn bộ danh sách ul của Header full width */
+ul {
+    list-style-type: none; /* Bỏ bullet point */
+    margin: 0;             /* Bỏ khoảng cách mặc định */
+    padding: 0;            /* Bỏ padding mặc định */
+    overflow: hidden;      /* Ẩn nội dung tràn */
+    background-color: #333; /* Đặt màu nền */
+    width: 100vw;          /* Phủ toàn bộ chiều rộng của trình duyệt */
+    position: fixed;       /* Cố định vị trí Header */
+    top: 0;                /* Dán sát trên cùng của trang */
+    left: 0;               /* Dán sát lề trái */
+    z-index: 9999;         /* Đặt lên trên các thành phần khác */
+  }
+  
+  /* Các thẻ <li> */
+  ul li {
+    float: left;           /* Đặt các mục nằm ngang */
+  }
+  
+  /* Liên kết bên trong li */
+  ul li a {
+    display: block;        /* Liên kết trở thành block */
+    color: white;          /* Màu chữ */
+    padding: 14px 16px;    /* Khoảng cách bên trong nút */
+    text-decoration: none; /* Bỏ gạch chân */
+  }
+  
+  /* Thêm hiệu ứng hover */
+  ul li a:hover {
+    background-color: #111; /* Đổi màu nền khi hover */
+  }
+  
+  /* Đánh dấu trang hiện tại */
+  ul li a.active {
+    background-color: #04AA6D; /* Màu nền cho mục đang active */
+  }
+  
+  /* Cách các nội dung bên dưới Header */
+  body {
+    padding-top: 50px; /* Tạo khoảng cách để không bị che khuất bởi Header */
+  }
+  

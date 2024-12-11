@@ -1,0 +1,35 @@
+/* Định dạng cho danh sách (ul) */
+ul {
+  list-style-type: none; /* Loại bỏ dấu chấm tròn */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Canh giữa các liên kết */
+  background-color: #333; /* Màu nền cho header */
+}
+
+/* Định dạng cho từng mục (li) */
+ul li {
+  margin: 0 15px; /* Khoảng cách giữa các mục */
+}
+
+/* Định dạng cho liên kết (NavLink) */
+ul li a, ul li .active {
+  color: white; /* Màu chữ */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  font-size: 18px; /* Kích thước chữ */
+  padding: 10px 15px; /* Khoảng cách trong các liên kết */
+  display: block;
+}
+
+/* Định dạng khi hover */
+ul li a:hover {
+  background-color: #555; /* Màu nền khi hover */
+  border-radius: 5px; /* Làm tròn góc */
+}
+
+/* Định dạng cho mục đang được chọn (active) */
+ul li .active {
+  background-color: #4CAF50; /* Màu nền cho liên kết đang được chọn */
+  border-radius: 5px;
+}
